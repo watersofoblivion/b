@@ -1,7 +1,7 @@
-B's Tutorial
+An Impractical Introduction to Computer Science
 ===
 
-This is a "tutorial" of sorts on Computer Programming to help you get the feel of it.  It is not meant to be a practical introduction that will get you programming today.  (If I had wanted that, I would have included *totally* different resources.)  As a matter of fact, it is intentionally impractical: the things covered here are things you'd never actually use to write "real" computer programs.
+This is a "tutorial" of sorts on Computer Programming to help non-programmers get the feel of how computers.  It is not meant to be a practical introduction that will get you programming today.  (If I had wanted that, I would have included *totally* different resources.)  As a matter of fact, it is intentionally impractical: the things covered here are things you'd never actually use to write "real" computer programs.
 
 Instead, it is meant to introduce you to "how computers work" at a couple of different levels of abstraction --one very low (Assembly) and one very high (λ Calculus)-- so that you can understand the very fundamentals and it strips away some of the "magic" that computers sometimes seem to be doing.  The things presented here are the "lingua franca" of computers.  Once you understand this, everything else is just a variant of it and translates to it.
 
@@ -9,7 +9,9 @@ One thing I will explicitly avoid doing is making physical analogies.  While the
 
 One analogy you *should* make in your mind, though, is to spreadsheets.  Spreadsheets are a surprisingly powerful tool that combines notions present in both the low-level and high-level views of computers presented here, and also exposes them in a very naked and unadorned fashion.  In certain places, I've even used the language of spreadsheets (words like "cells" and "formulas") quite intentionally to draw a parallel.  Be forewarned, like the physical analogy it's not exact.  But it is much, much closer.
 
-I give helpful questions for you to answer and exercises you can do.  You can think of them as "logic puzzles" to solve.  Some of the exercises will be surprisingly challenging, but they all have solutions.  Don't get frustrated.  Just think through the "rules of the game" and what they imply and you can find it.  I encourage you to not try to do this "in your head".  Grab a sheet of paper and a pencil, draw diagrams, write expressions, etc.  It's usually very helpful.  I also don't add a lot of hints.  You can reach out to me with any questions, but I might give you oblique answers that only put you on the right path or answer your question with a question instead of answering your questions directly.  I also try to structure the exercises as one that should be immediate, one that should take a little thought or just be less trivial, and then some that require you to read between the lines and possibly make some decisions on your own.
+I give helpful questions for you to answer and exercises you can do.  You can think of them as "logic puzzles" to solve.  Some of the exercises will be surprisingly challenging, but they all have solutions.  Don't get frustrated.  Just think through the "rules of the game" and what they imply and you can find it.  I encourage you to not try to do this "in your head".  Grab a sheet of paper and a pencil, draw diagrams, write expressions, etc.  It's usually very helpful.  I also try to structure the exercises as one that should be immediate, one that should take a little thought or just be less trivial, and then some that require you to read between the lines and possibly make some decisions on your own.
+
+Also note that this is a "first draft" of sorts, so it's pretty unevenly edited.  Feedback on flow, clarity, and all those other non-technical aspects of this is always appreciated.
 
 So, without further ado, let's get into the first view of computers: Assembly Language.
 
@@ -273,13 +275,13 @@ The format of the instruction is `load rd, offset(rs)`, where `rd` is the regist
 
 For example, to load the value stored in main memory at an address four beyond the address stored in register `x1` into register `x2`, the instruction would be:
 
-```
+```assembly
 load x2, 4(x1)
 ```
 
 To give concrete values to this, assume that register `x1` contained the value `10`.  Starting at memory address `10`, the next 5 memory addresses contained the values `3`, `19`, `99`, `42`, and `1`.  The following sequence of instructions would load the values `1`, `3`, `19`, `42`, and `99` into registers `x20`, `x21`, `x22`, `x23`, and `x24`, respectively.
 
-```
+```assembly
 load x20, 4(x1)
 load x21, 0(x1)
 load x22, 1(x1)
@@ -305,7 +307,7 @@ The format of the instruction is `store rs2, offset(rs1)`, where `rs1` is the re
 
 For example, to store the value in register `x2` into main memory at an address four beyond the address stored in register `x1`, the instruction would be:
 
-```
+```assembly
 store x2, 4(x1)
 ```
 
