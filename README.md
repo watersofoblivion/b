@@ -14,6 +14,10 @@ strips away some of the "magic" that computers sometimes seem to be doing.  The
 things presented here are the "lingua franca" of computers.  Once you understand
 this, everything else is just a variant of it and translates to it.
 
+(Both of those levels are "software", i.e., programs written to run on
+computers.  Additionally, I have a placeholder for Digital Logic, which is how
+the hardware works.  I don't know if I'll fill that in, but it's there.)
+
 One thing I will explicitly avoid doing is making physical analogies.  While
 they can be helpful, they can also lead you down the wrong path when the analogy
 between the physical object and the computer breaks down.  Instead, I will
@@ -82,6 +86,8 @@ Table Of Contents
   * [Queues](#queues)
   * [Trees](#trees)
   * [Graphs](#graphs)
+* [Untyped λ Calculus](#untyped-λ-calculus)
+* [Digital Logic](#digital-logic)
 
 Assembly Language
 ===
