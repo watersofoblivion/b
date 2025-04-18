@@ -1,0 +1,6 @@
+[book]
+authors = ["Jonathan Bryant"]
+language = "en"
+multilingual = false
+src = "src"
+title = "An Impractical Introduction to Computer Science"
