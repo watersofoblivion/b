@@ -75,6 +75,13 @@ Table Of Contents
       * [Flow Control](#flow-control)
         * [Unconditional Jumps](#unconditional-jumps)
         * [Conditional Branches](#conditional-branches)
+  * [Structured Data](#structured-data)
+  * [Arrays](#arrays)
+  * [Linked Lists](#linked-lists)
+  * [Stacks](#stacks)
+  * [Queues](#queues)
+  * [Trees](#trees)
+  * [Graphs](#graphs)
 
 Assembly Language
 ===
@@ -858,10 +865,40 @@ done:
   * If you only had a finite amount of memory, is there an instance where you
     could "run out" of memory?
 
-Exercises
+Structured Data
 ---
 
-(Work in Progress)
+TODO
+
+Arrays
+---
+
+TODO
+
+Linked Lists
+---
+
+TODO
+
+Stacks
+---
+
+TODO
+
+Queues
+---
+
+TODO
+
+Trees
+---
+
+TODO
+
+Graphs
+---
+
+TODO
 
 Untyped λ Calculus
 ===
